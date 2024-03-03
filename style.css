@@ -1,0 +1,111 @@
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.blocks {
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 75vw;
+  height: 60vh;
+  /* background-color: white; */
+  grid-gap: 0;
+  z-index: -100;
+  visibility: hidden;
+}
+
+.block {
+  width: 100px;
+  height: 50px;
+  border: 1px rgba(255, 238, 0, 0.866) solid;
+}
+
+.block--1 {
+  background-color: olivedrab;
+}
+
+.block--2 {
+  background-color: orange;
+}
+
+.block--3 {
+  background-color: darkred;
+}
+
+.block--0 {
+  visibility: hidden;
+  /* opacity: 0; */
+  /* display: none; */
+}
+
+.newgame {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-width: 150px;
+  min-height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-12vw, -12vh);
+  height: 25vh;
+  width: 25vw;
+  z-index: 0;
+  border-color: grey;
+  color: grey;
+}
+
+.btn--new {
+  width: 90%;
+  height: 50%;
+  margin: 5%;
+  color: grey;
+  background-color: black;
+  border-color: grey;
+  border: solid;
+  font-size: xx-large;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.btn--new:hover {
+  background-color: white;
+  color: black;
+}
+
+.highscore {
+  align-self: center;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.ball {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: darkgray;
+}
+
+.bar {
+  position: absolute;
+  height: 15px;
+  width: 25vw;
+  /* border-radius: 12.5%; */
+  top: 95vh;
+  left: 37.5vw;
+  background-color: darkgray;
+  transition-duration: 1ms;
+}
+
+.hidden {
+  display: none;
+}
